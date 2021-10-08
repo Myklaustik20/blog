@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My first webpage</title>
+    <link href='style.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <head>
+
+        <form>
+            <h1 style='color: black;'>Register</h1>
+            <div class="logo">
+                <img src="/logo/avengers-logo.png">
+            </div>
+
+
+
+            <div class='login'>
+
+                <span style='color: blue;' id='sign'><em>Sign up:</em></span>
+                <br>
+                <label for="username"><strong>username:</strong></label>
+                <input type="text" name="username" id="username" required minlength="5" maxlength="15"
+                    pattern="[a-zA-Z0-9]+">
+                <br>
+                <label for="user-password"><strong>password:</strong></label>
+                <input type="password" id="user-pw" name="user-pw" minlength="7" maxlength="20" pattern="[a-zA-Z0-9]+">
+
+
+                <hr>
+
+                <label for="years"><strong>date of birth:</strong></label>
+                <input id="years" name="years" type="numbers">
+                </hr>
+                <hr>
+                <strong>years of experience:</strong>
+                <input id="years" name="years" type="number" min="2" max="10" step="1">
+                </section>
+                <hr>
+                <section class="gender">
+                    <span><strong> Gender:</strong></span>
+                    <br>
+                    <label for="male" id='male'>Male</label>
+                    <input id="male" name="gender" type="checkbox">
+                    <label for="female" id='female'>Female</label>
+                    <input id="female" name="gender" type="checkbox">
+                    </hr>
+                    <hr>
+                    <label for="status" id='status'>Relationship status:</label>
+                    <select id="status" name="status">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="complicated">It's Complicated</option>
+                    </select>
+                    </hr>
+                    <hr>
+                    <section class="country-selection">
+                        <label for="country"><strong>Nationality:</strong></label>
+                        <input list="countries" id="country" name="country">
+                        <datalist id="countries">
+                            <option value="United States"></option>
+                            <option value="Canada"></option>
+                            <option value="Nigeria"></option>
+                            <option value="United Kingdom"></option>
+                            <option value="China"></option>
+                        </datalist>
+                    </section>
+                    </hr>
+                    <hr>
+                    <label for="allergies"><strong>Are you allergic to anything?</strong></label>
+                    <br>
+                    <textarea id="allergies" name="allergies" type="text" required>
+      </textarea>
+
+                    </hr>
+
+                    <hr>
+                    <section class="extra-info">
+                        <label for="blog"><strong>About yourself:</strong></label>
+                        <br>
+                        <textarea id="blog" name="blog" rows="3" cols="50">
+
+        </textarea>
+                        </hr>
+                        <hr>
+                        <label for="payment"><strong>Input your creditCard details:</strong></label>
+                        <br>
+                        <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+                        <input type="submit" value="submit">
+                        </hr>
+            </div>
+            <div class='rules'>
+                <p>Terms and conditions states that:
+                    <br>
+                    1. Charging of phone is at owner's risk.
+                    <br>
+                    2. funds are non-refundable.
+                    <br></br>
+                    <span><strong>Do you agree to the T&C?</strong></span>
+                    <br>
+                    <input type="radio" id="yes" name="answer" value="I agree">
+                    <label for="yes">I agree</label>
+                    <br>
+                    <input type="radio" id="no" name="answer" value="I disagree">
+                    <label for="no">I disagree</label>
+            </div>
+
+
+            <div class='summary' id='about-page'>
+                <label for="summary"><strong>Send us your thoughts and suggestions:-</strong></label>
+                <br><br>
+                <textarea id="summary" name="summary" type="text" rows="5" cols="100" required>
+        </textarea>
+                <br>
+                <input type="submit" value="submit">
+                </section>
+            </div>
+
+            <div class="signup">
+                <p><a href="">Sign Up</a></p>
+            </div>
+
+        </form>
+
+        <footer>
+            <h3><i>Thanks for taking our survey.<i></h3>
+</body>
+
+</html>
